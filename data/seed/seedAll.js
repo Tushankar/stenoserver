@@ -44,22 +44,6 @@ const seedData = async () => {
     await TextPassage.insertMany(passages);
     console.log("Passages seeded successfully!");
 
-    // Seed Demo User
-    await User.deleteOne({ email: "demo@example.com" });
-    await User.create({
-      name: "Demo User",
-      email: "demo@example.com",
-      password: "password123", // Will be hashed by pre-save hook
-      role: "user",
-      stats: {
-        totalSessions: 5,
-        totalMinutesPracticed: 20,
-        bestWPM: 45,
-        avgAccuracy: 92
-      }
-    });
-    console.log("Demo user created (demo@example.com / password123)");
-
     process.exit();
   } catch (error) {
     console.error(`Error seeding data: ${error.message}`);
