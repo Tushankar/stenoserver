@@ -9,13 +9,22 @@
     "avgWPMRequired": 60
   },
   {
-    "title": "Court Dictation - Evidence",
-    "content": "The defendant stated that he was not present on the night of the incident and has an alibi for the exact time in question. This alibi is fully corroborated by three separate independent witnesses.",
+    "title": "Beginner - Basic English Passage",
+    "content": "The cat sat on the mat. The sun was shining brightly. Children played in the park. Birds were singing in the trees. It was a beautiful day. Everyone was happy and smiling.",
     "language": "english",
-    "difficulty": "advanced",
-    "examType": "Court",
-    "category": "legal",
-    "avgWPMRequired": 120
+    "difficulty": "beginner",
+    "examType": "General",
+    "category": "general",
+    "avgWPMRequired": 50
+  },
+  {
+    "title": "Beginner - Simple Story",
+    "content": "Once there was a farmer. He had a small farm. He grew vegetables in his field. Every morning he would water the plants. In the afternoon he would rest under the tree. His dog would sit beside him. Life was simple and peaceful.",
+    "language": "english",
+    "difficulty": "beginner",
+    "examType": "SSC",
+    "category": "education",
+    "avgWPMRequired": 55
   },
   {
     "title": "Railway Board General Orders",
@@ -45,6 +54,24 @@
     "avgWPMRequired": 85
   },
   {
+    "title": "Intermediate - Education System",
+    "content": "The Indian education system has undergone significant changes in recent years. The introduction of the National Education Policy aims to strengthen the foundations of learning. Schools are now focusing on skill development along with academics. Teachers are encouraged to adopt innovative teaching methods. Digital platforms have made education more accessible to remote areas. The curriculum now emphasizes critical thinking and practical knowledge.",
+    "language": "english",
+    "difficulty": "intermediate",
+    "examType": "General",
+    "category": "education",
+    "avgWPMRequired": 90
+  },
+  {
+    "title": "Intermediate - Environmental Conservation",
+    "content": "Environmental conservation is crucial for the survival of our planet. Climate change has become a major concern for governments worldwide. Many countries have committed to reducing carbon emissions. Renewable energy sources like solar and wind power are being promoted. Forests are being preserved to maintain biodiversity. Citizens must participate actively in environmental protection initiatives. Small changes in our daily habits can make a significant difference.",
+    "language": "english",
+    "difficulty": "intermediate",
+    "examType": "General",
+    "category": "environment",
+    "avgWPMRequired": 95
+  },
+  {
     "title": "Indian Legal System - Writs",
     "content": "A writ of mandamus is a court order to any government, subordinate court, corporation, or public authority to do some specific act which that body is obliged under law to do and which is in the nature of public duty.",
     "language": "english",
@@ -52,6 +79,33 @@
     "examType": "Court",
     "category": "legal",
     "avgWPMRequired": 120
+  },
+  {
+    "title": "Court Dictation - Evidence",
+    "content": "The defendant stated that he was not present on the night of the incident and has an alibi for the exact time in question. This alibi is fully corroborated by three separate independent witnesses.",
+    "language": "english",
+    "difficulty": "advanced",
+    "examType": "Court",
+    "category": "legal",
+    "avgWPMRequired": 120
+  },
+  {
+    "title": "Advanced - Constitutional Law",
+    "content": "The Constitution of India is the supreme law of the land. It provides the framework for the governance of the nation. The Preamble outlines the objectives and values of the Constitution. Articles are divided into multiple parts dealing with different aspects of governance. The Fundamental Rights guarantee basic liberties to all citizens. The Directive Principles of State Policy guide the government in formulating policies. The Constitution has been amended numerous times to reflect the changing needs of society. These amendments demonstrate the flexibility and evolutionary nature of constitutional law.",
+    "language": "english",
+    "difficulty": "advanced",
+    "examType": "Court",
+    "category": "legal",
+    "avgWPMRequired": 125
+  },
+  {
+    "title": "Advanced - Judicial Procedure",
+    "content": "The judicial system ensures that justice is administered fairly and impartially. Civil cases involve disputes between private parties, while criminal cases involve violations of law. The procedure for filing cases is strictly regulated by the Code of Civil Procedure and Criminal Procedure Code. Evidence plays a crucial role in determining the outcome of a case. Witnesses are examined and cross-examined to establish facts. The judge carefully evaluates all evidence before delivering judgment. Appeals can be filed if a party is dissatisfied with the judgment of the lower court. The appellate process ensures that justice is not only done but appears to be done.",
+    "language": "english",
+    "difficulty": "advanced",
+    "examType": "Court",
+    "category": "legal",
+    "avgWPMRequired": 130
   },
   {
     "title": "Space Research Achievements",
@@ -63,31 +117,13 @@
     "avgWPMRequired": 110
   },
   {
-    "title": "Climate Change and Policy",
-    "content": "Sustainable development requires a balance between environmental protection and economic growth. Polar ice caps are melting at an alarming rate, necessitating immediate global cooperation to reduce carbon emissions drastically.",
+    "title": "Advanced - Technology and Innovation",
+    "content": "Technology has revolutionized every aspect of modern life. Artificial intelligence and machine learning are transforming industries from healthcare to finance. Cloud computing has enabled businesses to scale rapidly and efficiently. Cybersecurity has become paramount as organizations face increasing digital threats. Blockchain technology offers new possibilities for secure and transparent transactions. The Internet of Things connects billions of devices globally. Research and development in emerging technologies require substantial investments. Educational institutions must adapt to prepare students for technology-driven careers. Innovation drives economic growth and improves quality of life.",
     "language": "english",
-    "difficulty": "intermediate",
+    "difficulty": "advanced",
     "examType": "General",
-    "category": "environment",
-    "avgWPMRequired": 90
-  },
-  {
-    "title": "Historical Perspective of Steno",
-    "content": "Shorthand is an abbreviated symbolic writing method that increases speed and brevity of writing as compared to longhand. It has been an essential tool for court reporters and journalists for over two centuries.",
-    "language": "english",
-    "difficulty": "beginner",
-    "examType": "General",
-    "category": "education",
-    "avgWPMRequired": 65
-  },
-  {
-    "title": "Public Health Initiatives",
-    "content": "The Ministry of Health and Family Welfare has launched several immunization programs across the states. These initiatives aim to reduce child mortality and improve the overall life expectancy of the rural population.",
-    "language": "english",
-    "difficulty": "intermediate",
-    "examType": "General",
-    "category": "health",
-    "avgWPMRequired": 80
+    "category": "technology",
+    "avgWPMRequired": 125
   },
   {
     "title": "Constitutional Rights",
@@ -106,6 +142,15 @@
     "examType": "General",
     "category": "economy",
     "avgWPMRequired": 85
+  },
+  {
+    "title": "Advanced - Economic Development",
+    "content": "Economic development is essential for improving the standard of living in developing nations. Gross Domestic Product is the primary measure of a country's economic performance. Foreign Direct Investment brings capital and technology to the country. Infrastructure development including roads, railways, and ports facilitates economic growth. Manufacturing sector creates employment opportunities for millions. Service sector has become increasingly important in the modern economy. Government policies regarding taxation and monetary management influence economic stability. International trade opens new markets for domestic producers. Sustainable economic growth ensures long term prosperity.",
+    "language": "english",
+    "difficulty": "advanced",
+    "examType": "General",
+    "category": "economy",
+    "avgWPMRequired": 120
   },
   {
     "title": "Artificial Intelligence Ethics",
@@ -133,5 +178,320 @@
     "examType": "General",
     "category": "environment",
     "avgWPMRequired": 85
+  },
+  {
+    "title": "Advanced - Long Passage - Healthcare Reform",
+    "content": "Healthcare reform is a critical priority for developing nations. The accessibility and affordability of medical services directly impact public health outcomes. Government hospitals serve a large portion of the population, especially in rural areas. Private healthcare facilities provide specialized services to those who can afford them. The integration of traditional and modern medicine has proven beneficial in many regions. Medical education requires constant upgrading to match global standards. Telemedicine has opened new possibilities for reaching patients in remote areas. Preventive healthcare reduces the burden on hospitals and improves public health. Insurance schemes like Ayushman Bharat ensure that economically weaker sections receive necessary treatment. Research in medical science continues to discover new treatments for previously incurable diseases. Mental health awareness is gaining importance in healthcare discourse. The COVID-19 pandemic highlighted the importance of preparedness in the healthcare system.",
+    "language": "english",
+    "difficulty": "advanced",
+    "examType": "General",
+    "category": "health",
+    "avgWPMRequired": 120
+  },
+  {
+    "title": "Advanced - Long Passage - Governance and Administration",
+    "content": "Effective governance is fundamental to national development and citizen welfare. Public administration is the backbone of government functioning at all levels. Civil servants are entrusted with implementing government policies and delivering public services. Transparency and accountability in government operations build public trust. The bureaucratic structure ensures systematic execution of policies across regions. E-governance initiatives have digitized many government services improving efficiency. Public participation in governance strengthens democracy and ensures responsive administration. Anti-corruption measures are essential for maintaining integrity in government. Performance-based evaluations help identify and reward efficient administrators. Local self-government through panchayats and municipalities brings governance closer to people. Inter-departmental coordination is crucial for addressing complex issues. Citizens have the right to information about government decisions and actions.",
+    "language": "english",
+    "difficulty": "advanced",
+    "examType": "General",
+    "category": "government",
+    "avgWPMRequired": 125
+  },
+  {
+    "title": "Advanced - Long Passage - Demographic Challenges",
+    "content": "Population dynamics pose significant challenges and opportunities for India. The demographic dividend is a unique opportunity with a large young population. However, this requires massive investments in education and employment generation. Gender imbalance in certain regions raises concerns about future generations. Urbanization has led to rapid growth of metropolitan areas. Rural to urban migration creates infrastructure and housing challenges. The dependency ratio affects the working population's burden. Population control measures have been successful in reducing growth rates. Senior citizens require special attention and welfare schemes. Migration patterns have changed social and economic structures. Development of backward regions is essential for balanced growth. Census data provides crucial information for planning and policymaking.",
+    "language": "english",
+    "difficulty": "advanced",
+    "examType": "General",
+    "category": "environment",
+    "avgWPMRequired": 130
+  },
+  {
+    "title": "Beginner - Morning Routine",
+    "content": "I wake up early every morning. First, I brush my teeth and take a bath. Then I have breakfast with my family. My mother makes tea and toast. After breakfast, I pack my bag for school. I wear my school uniform. I take the bus to school every day.",
+    "language": "english",
+    "difficulty": "beginner",
+    "examType": "General",
+    "category": "general",
+    "avgWPMRequired": 55
+  },
+  {
+    "title": "Beginner - Family Time",
+    "content": "My family is very important to me. I have a mother, father, and two sisters. We all live together in a small house. On weekends, we play games together. We watch movies in the evening. We eat dinner together every night. My father tells us stories before we sleep.",
+    "language": "english",
+    "difficulty": "beginner",
+    "examType": "General",
+    "category": "general",
+    "avgWPMRequired": 50
+  },
+  {
+    "title": "Beginner - My School",
+    "content": "I go to a good school near my home. The school has many classrooms and a big playground. My favorite subject is English. I like my teacher very much. She teaches us in a fun way. We play games in the class. I have many friends at school. We play together during break time.",
+    "language": "english",
+    "difficulty": "beginner",
+    "examType": "SSC",
+    "category": "education",
+    "avgWPMRequired": 55
+  },
+  {
+    "title": "Beginner - Animal Friends",
+    "content": "I have a pet dog named Buddy. He is brown and white in color. I love Buddy very much. I play with him every day. He follows me everywhere. When I come home from school, Buddy is very happy. He wags his tail. We sleep together at night.",
+    "language": "english",
+    "difficulty": "beginner",
+    "examType": "General",
+    "category": "general",
+    "avgWPMRequired": 52
+  },
+  {
+    "title": "Intermediate - Indian Railways",
+    "content": "Indian Railways is one of the largest railway networks in the world. It connects every part of the country. Millions of people travel by train every day. Railways have played a crucial role in nation building. They provide employment to lakhs of people. Train stations are centers of activity and commerce. Different types of trains run on Indian railways including express, local, and goods trains. The government has modernized railways with new technology and infrastructure.",
+    "language": "english",
+    "difficulty": "intermediate",
+    "examType": "Railway",
+    "category": "government",
+    "avgWPMRequired": 95
+  },
+  {
+    "title": "Intermediate - Medical Education",
+    "content": "Medical education in India is highly competitive and rigorous. Students must study sciences from school level. NEET is the entrance examination for medical colleges. Medical courses involve both theory and practical training. Students learn in laboratories and hospitals. They interact with patients to gain real experience. Medicine requires dedication and commitment. Doctors play a vital role in society by treating diseases and saving lives.",
+    "language": "english",
+    "difficulty": "intermediate",
+    "examType": "General",
+    "category": "education",
+    "avgWPMRequired": 90
+  },
+  {
+    "title": "Intermediate - Tourism in India",
+    "content": "India is a major tourist destination with diverse attractions. The Taj Mahal is one of the wonders of the world. Ancient temples and historical monuments attract visitors from around the globe. Beaches, mountains, and forests offer natural beauty. Kerala backwaters are famous for their scenic beauty. The culture and traditions of India fascinate tourists. Tourism industry generates employment and foreign exchange. Heritage sites are protected for future generations.",
+    "language": "english",
+    "difficulty": "intermediate",
+    "examType": "General",
+    "category": "environment",
+    "avgWPMRequired": 88
+  },
+  {
+    "title": "Intermediate - Water Conservation",
+    "content": "Water is a precious natural resource that must be conserved. Many regions face acute water shortage. Groundwater levels are declining rapidly due to over extraction. Industrial and agricultural activities consume huge amounts of water. Rainwater harvesting is an effective solution to conserve water. Recycling and reusing water reduces wastage. Public awareness about water conservation is essential. Government policies should promote sustainable water management.",
+    "language": "english",
+    "difficulty": "intermediate",
+    "examType": "General",
+    "category": "environment",
+    "avgWPMRequired": 92
+  },
+  {
+    "title": "Intermediate - Employment Opportunities",
+    "content": "Employment opportunities are crucial for economic development. The service sector provides the most jobs in modern economy. Information technology has created numerous positions for skilled professionals. Small business ownership is another avenue for employment. Skill development programs prepare youth for employment. Entrepreneurship encourages people to create their own jobs. Government initiatives like Make in India boost employment. Education and training are keys to securing good employment.",
+    "language": "english",
+    "difficulty": "intermediate",
+    "examType": "General",
+    "category": "economy",
+    "avgWPMRequired": 93
+  },
+  {
+    "title": "Advanced - Banking System",
+    "content": "The banking system is the backbone of the financial structure of any country. Banks accept deposits from the public and provide loans for productive activities. Reserve Bank of India is the central bank that regulates all banking operations. Commercial banks have extensive networks across the country. Digital banking has revolutionized the way customers access financial services. Banking regulations ensure transparency and protect customer interests. Payment systems have become faster and more secure with technology. Banking sector contributes significantly to economic growth.",
+    "language": "english",
+    "difficulty": "advanced",
+    "examType": "General",
+    "category": "economy",
+    "avgWPMRequired": 118
+  },
+  {
+    "title": "Advanced - Environmental Policy",
+    "content": "Environmental policy is essential for sustainable development and protection of biodiversity. National Board for Wildlife oversees conservation of wildlife and forests. Air pollution control acts regulate emissions from industries and vehicles. Water pollution control acts protect water resources from contamination. Waste management rules ensure proper disposal of hazardous materials. Environmental Impact Assessment is mandatory for major development projects. Green building standards promote sustainable construction practices. International conventions on climate change require countries to reduce carbon emissions.",
+    "language": "english",
+    "difficulty": "advanced",
+    "examType": "General",
+    "category": "environment",
+    "avgWPMRequired": 122
+  },
+  {
+    "title": "Advanced - Criminal Justice System",
+    "content": "The criminal justice system comprises police, courts, and correctional institutions. Investigation is the first step in criminal procedure where evidence is collected. Prosecution presents the case against the accused in court. Defense lawyers ensure fair trial and protection of accused rights. Judges preside over cases and deliver judgment based on evidence and law. Punishment is awarded based on severity of crime and circumstances. Jail system provides correction and rehabilitation of offenders. Supreme Court has powers to review judgments and ensure justice.",
+    "language": "english",
+    "difficulty": "advanced",
+    "examType": "Court",
+    "category": "legal",
+    "avgWPMRequired": 124
+  },
+  {
+    "title": "Advanced - Scientific Research",
+    "content": "Scientific research forms the foundation of technological advancement and innovation. Research institutions conduct fundamental studies to increase knowledge. Applied research develops practical applications for scientific discoveries. Government funds research through various science academies and councils. Research collaborations between universities and industries accelerate innovation. Peer review ensures quality and validity of research findings. Patent protection encourages researchers to invest in innovation. Scientific publications disseminate knowledge globally and advance human understanding.",
+    "language": "english",
+    "difficulty": "advanced",
+    "examType": "General",
+    "category": "science",
+    "avgWPMRequired": 119
+  },
+  {
+    "title": "Advanced - Long Passage - Infrastructure Development",
+    "content": "Infrastructure development is vital for economic growth and social progress. Roads and highways connect cities and facilitate commerce. Bridges and tunnels overcome geographical barriers. Ports facilitate international trade and shipping. Airports enable quick transportation of people and goods. Power generation and distribution infrastructure supports all economic activities. Water supply and sanitation systems are essential for public health. Telecommunication networks connect people and enable digital communication. Quality infrastructure attracts domestic and foreign investment. Government must invest heavily in infrastructure to support development. Urban infrastructure requires careful planning and management. Maintenance of existing infrastructure is as important as building new.",
+    "language": "english",
+    "difficulty": "advanced",
+    "examType": "General",
+    "category": "government",
+    "avgWPMRequired": 128
+  },
+  {
+    "title": "Advanced - Long Passage - Education Reform",
+    "content": "Education reform is necessary to prepare students for modern challenges and opportunities. Traditional methods of teaching must be supplemented with innovative pedagogy. Skill-based education helps students become employable. STEM education develops scientific and technological thinking. Digital literacy is now essential for all students. Teacher training and professional development improve educational quality. Assessment methods should focus on holistic development. Inclusive education ensures opportunities for all students including those with disabilities. Higher education must align with industry requirements. Research and innovation should be encouraged at all educational levels. Global educational standards should be maintained. Education budgets must be increased to improve infrastructure.",
+    "language": "english",
+    "difficulty": "advanced",
+    "examType": "General",
+    "category": "education",
+    "avgWPMRequired": 126
+  },
+  {
+    "title": "Advanced - Long Passage - Public Health Systems",
+    "content": "Public health systems ensure health and wellness of the entire population. Primary health centers provide basic healthcare in rural areas. Community health workers serve as link between people and health system. Disease surveillance systems monitor health threats and enable quick response. Immunization programs prevent infectious diseases and save lives. Maternal and child health programs reduce mortality rates. Mental health services are increasingly recognized as important component of public health. Health information systems track disease patterns and health trends. Prevention is emphasized as cost-effective approach to health. Health education promotes awareness about hygiene and healthy lifestyle. Healthcare infrastructure requires proper funding and maintenance. Quality healthcare should be accessible and affordable.",
+    "language": "english",
+    "difficulty": "advanced",
+    "examType": "General",
+    "category": "health",
+    "avgWPMRequired": 127
+  },
+  {
+    "title": "Intermediate - Fashion Industry",
+    "content": "The fashion industry is a creative and dynamic sector of the economy. Designers create new styles and trends that influence how people dress. Textiles and garment manufacturing provide employment to millions. Fashion weeks showcase latest designs and trends. E-commerce has changed the way people shop for clothes. Sustainable fashion focuses on environmentally friendly practices. Traditional handloom fabrics are gaining international recognition. Export of fashion products generates significant foreign exchange.",
+    "language": "english",
+    "difficulty": "intermediate",
+    "examType": "General",
+    "category": "economy",
+    "avgWPMRequired": 87
+  },
+  {
+    "title": "Intermediate - Sports Development",
+    "content": "Sports play important role in physical and mental development of youth. Government supports sports through various schemes and facilities. National sports academies train talented athletes. International sports events showcase athletes on global platform. Sports generate tourism and employment opportunities. Corporate sponsorship contributes to sports development. Sports medicine has advanced to treat athletic injuries. Children must be encouraged to participate in sports.",
+    "language": "english",
+    "difficulty": "intermediate",
+    "examType": "General",
+    "category": "education",
+    "avgWPMRequired": 85
+  },
+  {
+    "title": "Intermediate - Energy Resources",
+    "content": "Energy resources are essential for economic development and improving living standards. Coal has been primary source of energy in India. Nuclear energy provides clean and reliable power. Solar energy potential is huge given geographical location of India. Wind energy projects are expanding across the country. Hydroelectric power is environmentally friendly source. Biomass and biogas provide renewable energy. Energy efficiency measures reduce consumption and costs.",
+    "language": "english",
+    "difficulty": "intermediate",
+    "examType": "General",
+    "category": "environment",
+    "avgWPMRequired": 89
+  },
+  {
+    "title": "Beginner - Seasons",
+    "content": "There are four seasons in a year. Spring is the season of flowers and fresh growth. Summer is very hot. Monsoon brings heavy rain. Winter is cold. Each season has its own beauty. Farmers depend on seasons for agriculture. Different crops grow in different seasons.",
+    "language": "english",
+    "difficulty": "beginner",
+    "examType": "General",
+    "category": "general",
+    "avgWPMRequired": 48
+  },
+  {
+    "title": "Advanced - International Relations",
+    "content": "International relations involve diplomatic interactions between countries. Bilateral relations between two countries are important for mutual benefit. Multilateral organizations facilitate cooperation among multiple nations. Trade agreements improve economic relations between countries. Cultural exchanges promote understanding and friendship. Conflict resolution through dialogue prevents wars. United Nations serves as platform for international cooperation. Foreign policy of each country reflects its national interests.",
+    "language": "english",
+    "difficulty": "advanced",
+    "examType": "General",
+    "category": "government",
+    "avgWPMRequired": 116
+  },
+  {
+    "title": "Advanced - Long Passage - Literature and Culture",
+    "content": "Literature is the mirror of society reflecting its values and traditions. Indian literature is ancient and has contributed significantly to world literature. Sanskrit literature contains treasures of wisdom and philosophical thoughts. Regional literatures in Hindi, Tamil, Telugu and other languages are vibrant. Modern Indian writers have gained international recognition. Literary festivals provide platform for writers and readers to interact. Publications and libraries preserve and promote literary heritage. Literary criticism helps readers understand deeper meanings. Translation makes literature accessible across linguistic boundaries. Literature inspires people and influences social change. Cultural institutions support preservation of literary traditions. Reading habit must be developed from early childhood.",
+    "language": "english",
+    "difficulty": "advanced",
+    "examType": "General",
+    "category": "education",
+    "avgWPMRequired": 125
+  },
+  {
+    "title": "Intermediate - Agriculture Sector",
+    "content": "Agriculture is the backbone of Indian economy employing millions of people. Farmers grow crops that feed the nation and provide raw materials for industries. Monsoon rainfall is crucial for agricultural productivity. Irrigation systems help in water management and crop production. Modern farming techniques increase yield and reduce cost. Soil testing helps farmers choose appropriate fertilizers. Agricultural extension services provide guidance to farmers. Supply chain management ensures fair prices for farmers.",
+    "language": "english",
+    "difficulty": "intermediate",
+    "examType": "General",
+    "category": "economy",
+    "avgWPMRequired": 90
+  },
+  {
+    "title": "Beginner - Market Day",
+    "content": "My mother takes me to the market every Sunday. There are many shops and vendors. The fruit vendor sells fresh fruits. The vegetable vendor has green vegetables. We buy bread from the bakery. We also buy milk and eggs. Everything is fresh and good quality. The market is always crowded.",
+    "language": "english",
+    "difficulty": "beginner",
+    "examType": "General",
+    "category": "general",
+    "avgWPMRequired": 52
+  },
+  {
+    "title": "Advanced - Cyber Security",
+    "content": "Cybersecurity has become critical concern in digital age. Hackers exploit vulnerabilities in systems to steal data. Encryption protects sensitive information from unauthorized access. Firewalls prevent unauthorized access to networks. Antivirus software detects and removes malicious programs. Regular software updates patch security vulnerabilities. User authentication ensures only authorized people access systems. Cybersecurity awareness helps people protect themselves online. Government agencies work to prevent cyber crimes. International cooperation is necessary to combat cyber threats.",
+    "language": "english",
+    "difficulty": "advanced",
+    "examType": "General",
+    "category": "technology",
+    "avgWPMRequired": 117
+  },
+  {
+    "title": "Intermediate - Manufacturing Sector",
+    "content": "Manufacturing sector is backbone of industrialization and economic development. Factories convert raw materials into finished goods. Quality control ensures products meet standards. Labor-intensive manufacturing provides employment to millions. Automation increases productivity and efficiency. Supply chains connect manufacturers with distributors and retailers. Export of manufactured goods earns foreign exchange. Government initiatives like Make in India boost manufacturing.",
+    "language": "english",
+    "difficulty": "intermediate",
+    "examType": "General",
+    "category": "economy",
+    "avgWPMRequired": 86
+  },
+  {
+    "title": "Advanced - Long Passage - Urban Planning",
+    "content": "Urban planning is essential to manage growth of cities and ensure sustainable development. City planners design infrastructure and land use patterns. Green spaces and parks improve quality of life in cities. Public transportation reduces traffic congestion and pollution. Zoning regulations separate residential, commercial, and industrial areas. Building codes ensure safety and quality of construction. Water and sanitation systems must be adequate for growing population. Waste management systems prevent environmental degradation. Urban renewal programs revitalize old and deteriorated areas. Smart city initiatives use technology for efficient management. Community participation in planning ensures public needs are met. Disaster management planning helps prepare for natural calamities.",
+    "language": "english",
+    "difficulty": "advanced",
+    "examType": "General",
+    "category": "government",
+    "avgWPMRequired": 129
+  },
+  {
+    "title": "Beginner - Rain",
+    "content": "When it rains, the sky becomes dark and clouds cover the sun. Raindrops fall on the ground. We see puddles on the road. Children like to play in rain. We wear raincoats and carry umbrellas. Plants and trees get water from rain. Farmers are happy when it rains. Rain fills wells and tanks with water.",
+    "language": "english",
+    "difficulty": "beginner",
+    "examType": "General",
+    "category": "general",
+    "avgWPMRequired": 50
+  },
+  {
+    "title": "Intermediate - Disaster Management",
+    "content": "Disaster management is important for protecting people from natural calamities. Earthquakes, floods, and cyclones are natural disasters. Early warning systems help people prepare and evacuate. Disaster preparedness includes training and mock drills. Emergency response teams provide immediate help after disasters. Relief camps provide food and shelter to affected people. Rehabilitation programs help people rebuild their lives. Community participation increases effectiveness of disaster management.",
+    "language": "english",
+    "difficulty": "intermediate",
+    "examType": "General",
+    "category": "government",
+    "avgWPMRequired": 91
+  },
+  {
+    "title": "Advanced - Intellectual Property Rights",
+    "content": "Intellectual property rights protect creations of human mind. Patents protect inventions and innovations. Copyrights protect literary and artistic works. Trademarks identify and distinguish products in market. Trade secrets protect confidential business information. Patent offices examine applications and grant protection. Infringement of intellectual property rights is punishable by law. Royalties compensate creators for use of their work. International agreements harmonize intellectual property standards.",
+    "language": "english",
+    "difficulty": "advanced",
+    "examType": "General",
+    "category": "legal",
+    "avgWPMRequired": 115
+  },
+  {
+    "title": "Intermediate - Health and Nutrition",
+    "content": "Good health requires proper nutrition and balanced diet. Proteins build and repair body tissues. Carbohydrates provide energy. Fats store energy. Vitamins and minerals regulate body functions. Fruits and vegetables provide essential nutrients. Whole grains are good source of fiber. Dairy products provide calcium for bones. Clean water is essential for hydration. Regular exercise maintains physical fitness. Sleep is important for health. Eating habits formed in childhood last lifetime.",
+    "language": "english",
+    "difficulty": "intermediate",
+    "examType": "General",
+    "category": "health",
+    "avgWPMRequired": 88
+  },
+  {
+    "title": "Advanced - Long Passage - Climate Change Mitigation",
+    "content": "Climate change is one of greatest challenges facing humanity. Rising temperatures cause sea levels to rise threatening coastal areas. Extreme weather events become more frequent and severe. Greenhouse gases trap heat in atmosphere causing warming. Carbon dioxide emissions from vehicles and industries contribute to climate change. Renewable energy sources reduce dependence on fossil fuels. Energy efficiency in buildings reduces power consumption. Tree plantation increases carbon absorption. International climate agreements commit countries to reduce emissions. Climate finance helps developing countries adapt to climate change. Education and awareness about climate change are crucial. Individual actions contribute to collective effort against climate change.",
+    "language": "english",
+    "difficulty": "advanced",
+    "examType": "General",
+    "category": "environment",
+    "avgWPMRequired": 131
   }
 ]

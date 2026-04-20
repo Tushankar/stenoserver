@@ -5,11 +5,13 @@ const {
   getRandomText,
   getTextById,
   createText,
+  generateAIPassage,
 } = require("../controllers/textController");
 const { protect } = require("../middleware/authMiddleware");
 
 router.get("/", getAllTexts);
 router.get("/random", getRandomText);
+router.post("/generate-ai", generateAIPassage);
 router.get("/:id", getTextById);
 router.post("/", protect, createText);
 

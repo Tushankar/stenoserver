@@ -1,4 +1,5 @@
 const TextPassage = require("../models/TextPassage");
+const { generatePracticePassage } = require("../services/aiService");
 
 exports.getAllTexts = async (req, res) => {
   try {
@@ -52,6 +53,62 @@ exports.getTextById = async (req, res) => {
     res.json({ success: true, text });
   } catch (err) {
     res.status(500).json({ success: false, message: err.message });
+  }
+};
+
+exports.generateAIPassage = async (req, res) => {
+  try {
+    const {
+      difficulty = "intermediate",
+      examType = "SSC",
+      weakKeys = [],
+      weakPatterns = [],
+      topics = "",
+      wordCount = 100,
+    } = req.body;
+
+    // Map frontend difficulty names to internal names
+    const difficultyMap = {
+      easy: "beginner",
+      medium: "intermediate",
+      hard: "advanced",
+    };
+
+    const internalDifficulty = difficultyMap[difficulty] || difficulty;
+
+    // Generate passage using AI
+    const content = await generatePracticePassage({
+      weakKeys,
+      weakPatterns,
+      level: internalDifficulty,
+      examType,
+      wordCount,
+      topics,
+    });
+
+    // Create and save passage to database
+    const passage = await TextPassage.create({
+      title: `AI Generated - ${examType} ${difficulty.charAt(0).toUpperCase() + difficulty.slice(1)}`,
+      content,
+      language: "english",
+      difficulty: internalDifficulty,
+      examType,
+      category: "ai-generated",
+      avgWPMRequired:
+        difficulty === "easy" ? 60 : difficulty === "medium" ? 90 : 120,
+    });
+
+    res.status(201).json({
+      success: true,
+      text: passage,
+      message: "AI passage generated successfully!",
+    });
+  } catch (err) {
+    console.error("AI Passage Generation Error:", err);
+    res.status(500).json({
+      success: false,
+      message: err.message || "Failed to generate AI passage",
+    });
   }
 };
 
