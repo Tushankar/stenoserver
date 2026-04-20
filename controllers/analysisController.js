@@ -18,7 +18,9 @@ exports.getProgressData = async (req, res) => {
     // Moving average WPM
     const movingAvg = wpmTrend.map((_, i, arr) => {
       const slice = arr.slice(Math.max(0, i - 4), i + 1);
-      return Math.round(slice.reduce((s, v) => s + v.wpm, 0) / slice.length) || 0;
+      return (
+        Math.round(slice.reduce((s, v) => s + v.wpm, 0) / slice.length) || 0
+      );
     });
 
     // Predicted WPM (simple linear regression)
@@ -27,8 +29,15 @@ exports.getProgressData = async (req, res) => {
     if (n >= 5) {
       const xMean = (n - 1) / 2;
       const yMean = wpmTrend.reduce((s, v) => s + v.wpm, 0) / n;
-      const slopeDenom = wpmTrend.reduce((s, _, i) => s + Math.pow(i - xMean, 2), 0);
-      const slope = slopeDenom === 0 ? 0 : wpmTrend.reduce((s, v, i) => s + (i - xMean) * (v.wpm - yMean), 0) / slopeDenom;
+      const slopeDenom = wpmTrend.reduce(
+        (s, _, i) => s + Math.pow(i - xMean, 2),
+        0,
+      );
+      const slope =
+        slopeDenom === 0
+          ? 0
+          : wpmTrend.reduce((s, v, i) => s + (i - xMean) * (v.wpm - yMean), 0) /
+            slopeDenom;
       predictedWPM = Math.round(yMean + slope * (n + 6)) || 0; // ~7 sessions ahead
     }
 

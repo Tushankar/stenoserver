@@ -6,10 +6,10 @@ exports.generatePractice = async (req, res) => {
   try {
     const { weakKeys, weakPatterns, level, wordCount, topics } = req.body;
     const user = req.user;
-    
+
     const validExamTypes = ["SSC", "Court", "Railway", "General"];
-    const examTarget = validExamTypes.includes(user.profile?.examTarget) 
-      ? user.profile.examTarget 
+    const examTarget = validExamTypes.includes(user.profile?.examTarget)
+      ? user.profile.examTarget
       : "SSC";
 
     const passageContent = await aiService.generatePracticePassage({
