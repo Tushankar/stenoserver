@@ -1,5 +1,5 @@
 
-$URL = "http://localhost:5000/api"
+$URL = "https://stenoserver.onrender.com/api"
 
 Write-Host "Registering User..."
 $reg = curl.exe -s -X POST "$URL/auth/register" -H "Content-Type: application/json" -d "{\`"name\`": \`"CurlTest\`", \`"email\`": \`"curl@example.com\`", \`"password\`": \`"curlpass123\`"}"

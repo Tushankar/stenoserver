@@ -2,7 +2,7 @@ const fetch = require("node-fetch"); // Native fetch in Node 18+
 const mongoose = require("mongoose");
 require("dotenv").config();
 
-const API = "http://localhost:5000/api";
+const API = "https://stenoserver.onrender.com/api";
 const EMAIL = "curl_audit_e2e_test@example.com";
 
 async function testAll() {
