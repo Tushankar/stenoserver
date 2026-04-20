@@ -1,73 +1,74 @@
-const fs = require("fs");
-const file = "data/seed/passages.json";
-let data = JSON.parse(fs.readFileSync(file, "utf8"));
+const fs = require('fs');
+const file = 'data/seed/passages.json';
+let data = JSON.parse(fs.readFileSync(file, 'utf8'));
+
+// Clear generated, keep original 55
+data = data.slice(0, 55);
+
+const hardWords = [
+  "ubiquitous", "serendipity", "conundrum", "magnanimous", "meticulous", "ephemeral", 
+  "quintessential", "fastidious", "idiosyncratic", "clandestine", "cacophony", "esoteric",
+  "sycophant", "mellifluous", "obfuscate", "perfunctory", "quixotic", "surreptitious",
+  "trepidation", "vociferous", "anomaly", "capricious", "dichotomy", "enigma", "equivocal",
+  "grandiose", "ineffable", "juxtaposition", "labyrinthine", "nefarious", "paradigm",
+  "rhetoric", "symbiosis", "unprecedented", "venerable", "acrimonious", "belligerent",
+  "circuitous", "demagogue", "efficacious", "facetious", "garrulous", "histrionic",
+  "iconoclast", "loquacious", "munificent", "obstinate", "pedantic", "querulous",
+  "recalcitrant", "sagacious", "taciturn", "vacillate", "zealous", "ambivalent",
+  "benevolent", "cogent", "didactic", "empirical", "frivolous", "gregarious", "imperative",
+  "jurisprudence", "litigation", "plaintiff", "defendant", "affidavit", "testimony",
+  "bureaucracy", "constitution", "parliament", "senate", "legislation", "sovereign",
+  "economic", "fluctuation", "inflation", "recession", "monetary", "fiscal", "deficit",
+  "surplus", "dividend", "liquidity", "amortization", "arbitrage", "depreciation"
+];
 
 for (let i = 1; i <= 45; i++) {
-  const contentLen = 30 + Math.floor(Math.random() * 20);
-  const dict = [
-    "the",
-    "quick",
-    "brown",
-    "fox",
-    "jumps",
-    "over",
-    "lazy",
-    "dog",
-    "stenography",
-    "practice",
-    "session",
-    "court",
-    "trial",
-    "government",
-    "policy",
-    "market",
-    "economy",
-    "growth",
-    "education",
-    "health",
-    "system",
-    "technology",
-    "innovation",
-    "development",
-    "infrastructure",
-    "public",
-    "private",
-    "sector",
-    "investment",
-    "capital",
-    "skills",
-    "wpm",
-    "shorthand",
-    "transcription",
-    "accuracy",
-    "keyboard",
-    "layout",
-  ];
+  // Much longer passages containing hard words and varied vocabulary
+  const contentLen = 80 + Math.floor(Math.random() * 40); 
+  let passageList = [];
+  let recentWords = [];
+  
+  for (let j = 0; j < contentLen; j++) {
+    let word;
+    let attempts = 0;
+    
+    do {
+      // Pick a random word from the hard dictionary
+      word = hardWords[Math.floor(Math.random() * hardWords.length)];
+      attempts++;
+    } while (recentWords.includes(word) && attempts < 20); // Keep trying if it's recently used
+    
+    // Add to our recent memory array so it doesn't get drawn again right away
+    recentWords.push(word);
+    
+    // Remember the last 30 words to prevent any close repetition
+    if (recentWords.length > 30) recentWords.shift();
 
-  let passage = [];
-  for (let j = 0; j < Math.floor(contentLen * 5); j++) {
-    let word = dict[Math.floor(Math.random() * dict.length)];
-    if (j % 12 === 0 && j > 0) word += ".";
-    passage.push(word);
+    // Adding basic punctuation for realistic sentences
+    if (j > 0 && j % 10 === 0 && j < contentLen - 1) {
+        word += ".";
+    } else if (j > 0 && j % 6 === 0 && j < contentLen - 1) {
+        word += ",";
+    }
+    
+    passageList.push(word); 
   }
-  let content = passage.join(" ") + ".";
-  content = content.charAt(0).toUpperCase() + content.slice(1);
+  
+  let content = passageList.join(" ") + ".";
+  
+  // Capitalize sentence beginnings
+  content = content.replace(/(^\w|\.\s+\w)/gi, (match) => match.toUpperCase());
 
   data.push({
-    title: `Custom Drill Passage ${i}`,
+    title: `Advanced Vocabulary Drill ${i}`,
     content: content,
     language: "english",
-    difficulty: ["beginner", "intermediate", "advanced"][
-      Math.floor(Math.random() * 3)
-    ],
-    examType: ["SSC", "Court", "Railway", "General"][
-      Math.floor(Math.random() * 4)
-    ],
-    category: ["general", "legal", "finance", "education"][
-      Math.floor(Math.random() * 4)
-    ],
-    avgWPMRequired: 60 + Math.floor(Math.random() * 60),
+    difficulty: ["intermediate", "advanced"][Math.floor(Math.random() * 2)],
+    examType: ["SSC", "Court", "Railway", "General"][Math.floor(Math.random() * 4)],
+    category: ["legal", "finance", "education", "environment"][Math.floor(Math.random() * 4)],
+    avgWPMRequired: 80 + Math.floor(Math.random() * 40),
   });
 }
+
 fs.writeFileSync(file, JSON.stringify(data, null, 2));
-console.log("Added 45 custom passages! Total is now: " + data.length);
+console.log("Regenerated 45 custom passages with extensive hard vocabulary! Total is now: " + data.length);
