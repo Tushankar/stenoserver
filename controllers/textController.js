@@ -3,12 +3,13 @@ const { generatePracticePassage } = require("../services/aiService");
 
 exports.getAllTexts = async (req, res) => {
   try {
-    const { difficulty, examType, language, limit = 10, page = 1 } = req.query;
+    const { difficulty, examType, language, category, limit = 10, page = 1 } = req.query;
 
     const filter = {};
     if (difficulty) filter.difficulty = difficulty;
     if (examType) filter.examType = examType;
     if (language) filter.language = language;
+    if (category) filter.category = category;
 
     const texts = await TextPassage.find(filter)
       .limit(parseInt(limit))
