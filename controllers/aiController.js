@@ -7,14 +7,23 @@ exports.generatePractice = async (req, res) => {
     const { weakKeys, weakPatterns, level, wordCount, topics } = req.body;
     const user = req.user;
     
+    const validExamTypes = ["SSC", "Court", "Railway", "General"];
+    const examTarget = validExamTypes.includes(user.profile?.examTarget) 
+      ? user.profile.examTarget 
+      : "SSC";
+
     const passageContent = await aiService.generatePracticePassage({
       weakKeys: weakKeys || [],
       weakPatterns: weakPatterns || [],
       level: level || "intermediate",
-      examType: user.profile?.examTarget || "SSC",
+      examType: examTarget,
       wordCount: wordCount || 150,
       topics: topics || "",
     });
+
+    if (!passageContent) {
+      throw new Error("AI failed to generate a passage.");
+    }
 
     // Phase 6 & User Request: Save AI-generated passage to DB for future practice
     const newPassage = await TextPassage.create({
@@ -22,8 +31,8 @@ exports.generatePractice = async (req, res) => {
       content: passageContent,
       language: "english",
       difficulty: level || "intermediate",
-      examType: user.profile?.examTarget || "SSC",
-      category: "AI-Generated",
+      examType: examTarget,
+      category: "General",
     });
 
     res.json({ success: true, passage: newPassage });

@@ -10,15 +10,15 @@ exports.getProgressData = async (req, res) => {
 
     const wpmTrend = sessions.map((s) => ({
       date: s.completedAt,
-      wpm: s.wpm,
-      accuracy: s.accuracy,
-      mode: s.mode,
+      wpm: s.wpm || 0,
+      accuracy: s.accuracy || 0,
+      mode: s.mode || "practice",
     }));
 
     // Moving average WPM
     const movingAvg = wpmTrend.map((_, i, arr) => {
       const slice = arr.slice(Math.max(0, i - 4), i + 1);
-      return Math.round(slice.reduce((s, v) => s + v.wpm, 0) / slice.length);
+      return Math.round(slice.reduce((s, v) => s + v.wpm, 0) / slice.length) || 0;
     });
 
     // Predicted WPM (simple linear regression)
@@ -27,10 +27,9 @@ exports.getProgressData = async (req, res) => {
     if (n >= 5) {
       const xMean = (n - 1) / 2;
       const yMean = wpmTrend.reduce((s, v) => s + v.wpm, 0) / n;
-      const slope =
-        wpmTrend.reduce((s, v, i) => s + (i - xMean) * (v.wpm - yMean), 0) /
-        wpmTrend.reduce((s, _, i) => s + Math.pow(i - xMean, 2), 0);
-      predictedWPM = Math.round(yMean + slope * (n + 6)); // ~7 sessions ahead
+      const slopeDenom = wpmTrend.reduce((s, _, i) => s + Math.pow(i - xMean, 2), 0);
+      const slope = slopeDenom === 0 ? 0 : wpmTrend.reduce((s, v, i) => s + (i - xMean) * (v.wpm - yMean), 0) / slopeDenom;
+      predictedWPM = Math.round(yMean + slope * (n + 6)) || 0; // ~7 sessions ahead
     }
 
     res.json({ success: true, wpmTrend, movingAvg, predictedWPM });
@@ -49,6 +48,7 @@ exports.getWeakKeyAnalysis = async (req, res) => {
     const keyStats = {};
     sessions.forEach((session) => {
       (session.keystrokeData || []).forEach((k) => {
+        if (!k || !k.key) return;
         if (!keyStats[k.key])
           keyStats[k.key] = { total: 0, errors: 0, totalDelay: 0 };
         keyStats[k.key].total++;
@@ -89,16 +89,19 @@ exports.getDashboardStats = async (req, res) => {
     const totalSessions = sessions.length;
     const avgWPM =
       totalSessions > 0
-        ? Math.round(sessions.reduce((s, se) => s + se.wpm, 0) / totalSessions)
+        ? Math.round(
+            sessions.reduce((s, se) => s + (se.wpm || 0), 0) / totalSessions,
+          )
         : 0;
     const avgAccuracy =
       totalSessions > 0
         ? Math.round(
-            sessions.reduce((s, se) => s + se.accuracy, 0) / totalSessions,
+            sessions.reduce((s, se) => s + (se.accuracy || 0), 0) /
+              totalSessions,
           )
         : 0;
     const bestWPM =
-      totalSessions > 0 ? Math.max(...sessions.map((s) => s.wpm)) : 0;
+      totalSessions > 0 ? Math.max(...sessions.map((s) => s.wpm || 0)) : 0;
 
     const recent = sessions.slice(0, 5);
     const adaptiveLevel = getNextDifficulty
@@ -110,14 +113,18 @@ exports.getDashboardStats = async (req, res) => {
     if (sessions.length > 0) {
       const dates = [
         ...new Set(
-          sessions.map((s) => {
-            const d = new Date(s.completedAt);
-            return new Date(
-              d.getFullYear(),
-              d.getMonth(),
-              d.getDate(),
-            ).getTime();
-          }),
+          sessions
+            .map((s) => {
+              if (!s.completedAt) return 0;
+              const d = new Date(s.completedAt);
+              if (isNaN(d.getTime())) return 0;
+              return new Date(
+                d.getFullYear(),
+                d.getMonth(),
+                d.getDate(),
+              ).getTime();
+            })
+            .filter((t) => t > 0),
         ),
       ];
 
