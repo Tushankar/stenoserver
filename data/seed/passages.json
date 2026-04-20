@@ -1,0 +1,29 @@
+[
+  {
+    "title": "SSC CHSL Beginner Dictation 1",
+    "content": "The quick brown fox jumps over the lazy dog. Steno is a fun and very useful skill.",
+    "language": "english",
+    "difficulty": "beginner",
+    "examType": "SSC",
+    "category": "general",
+    "avgWPMRequired": 60
+  },
+  {
+    "title": "Court Dictation - Evidence",
+    "content": "The defendant stated that he was not present on the night of the incident and has an alibi for the exact time in question. This alibi is fully corroborated by three separate independent witnesses.",
+    "language": "english",
+    "difficulty": "advanced",
+    "examType": "Court",
+    "category": "legal",
+    "avgWPMRequired": 120
+  },
+  {
+    "title": "Railway Board General Orders",
+    "content": "The railway expansion project has been sanctioned by the central government. Commuters can expect increased frequency on all major metropolitan lines starting from the first quarter of the new financial term.",
+    "language": "english",
+    "difficulty": "intermediate",
+    "examType": "Railway",
+    "category": "government",
+    "avgWPMRequired": 80
+  }
+]
