@@ -25,11 +25,14 @@ exports.generatePracticePassage = async ({
   level,
   examType,
   wordCount,
+  topics,
 }) => {
+  const topicPrompt = topics ? `- Focus primarily on these topics: ${topics}` : "";
   const prompt = `You are a steno typing trainer for Indian competitive exams (${examType}).
 
 Generate a ${wordCount}-word practice passage that:
-- Has HIGH frequency of these characters/patterns: ${weakKeys.join(", ")}
+${topicPrompt}
+- Has HIGH frequency of these characters/patterns: ${(weakKeys || []).join(", ")}
 - Includes words with these bigrams: ${(weakPatterns || []).join(", ")}
 - Matches ${level} difficulty
 - Is government/legal/news style (realistic for steno exams)

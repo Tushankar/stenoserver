@@ -25,5 +25,113 @@
     "examType": "Railway",
     "category": "government",
     "avgWPMRequired": 80
+  },
+  {
+    "title": "SSC Stenographer Exam Prep 1",
+    "content": "The committee has submitted its final report on the constitutional amendments. Members of the parliament are expected to debate the key findings next week. Public discourse remains vital for a healthy democracy.",
+    "language": "english",
+    "difficulty": "intermediate",
+    "examType": "SSC",
+    "category": "government",
+    "avgWPMRequired": 100
+  },
+  {
+    "title": "Digital India Transformation",
+    "content": "Digital India is a flagship program of the Government of India with a vision to transform India into a digitally empowered society and knowledge economy. It focuses on digital infrastructure as a core utility to every citizen.",
+    "language": "english",
+    "difficulty": "intermediate",
+    "examType": "General",
+    "category": "technology",
+    "avgWPMRequired": 85
+  },
+  {
+    "title": "Indian Legal System - Writs",
+    "content": "A writ of mandamus is a court order to any government, subordinate court, corporation, or public authority to do some specific act which that body is obliged under law to do and which is in the nature of public duty.",
+    "language": "english",
+    "difficulty": "advanced",
+    "examType": "Court",
+    "category": "legal",
+    "avgWPMRequired": 120
+  },
+  {
+    "title": "Space Research Achievements",
+    "content": "The Indian Space Research Organisation has achieved significant milestones in space exploration. The successful launch of Chandrayaan missions has placed India among the elite nations with advanced lunar technology capabilities.",
+    "language": "english",
+    "difficulty": "advanced",
+    "examType": "General",
+    "category": "science",
+    "avgWPMRequired": 110
+  },
+  {
+    "title": "Climate Change and Policy",
+    "content": "Sustainable development requires a balance between environmental protection and economic growth. Polar ice caps are melting at an alarming rate, necessitating immediate global cooperation to reduce carbon emissions drastically.",
+    "language": "english",
+    "difficulty": "intermediate",
+    "examType": "General",
+    "category": "environment",
+    "avgWPMRequired": 90
+  },
+  {
+    "title": "Historical Perspective of Steno",
+    "content": "Shorthand is an abbreviated symbolic writing method that increases speed and brevity of writing as compared to longhand. It has been an essential tool for court reporters and journalists for over two centuries.",
+    "language": "english",
+    "difficulty": "beginner",
+    "examType": "General",
+    "category": "education",
+    "avgWPMRequired": 65
+  },
+  {
+    "title": "Public Health Initiatives",
+    "content": "The Ministry of Health and Family Welfare has launched several immunization programs across the states. These initiatives aim to reduce child mortality and improve the overall life expectancy of the rural population.",
+    "language": "english",
+    "difficulty": "intermediate",
+    "examType": "General",
+    "category": "health",
+    "avgWPMRequired": 80
+  },
+  {
+    "title": "Constitutional Rights",
+    "content": "The Fundamental Rights are defined as basic human liberties that all Indian citizens have the right to enjoy for a proper and harmonious development of their personality. These rights are fundamental to democracy.",
+    "language": "english",
+    "difficulty": "advanced",
+    "examType": "SSC",
+    "category": "government",
+    "avgWPMRequired": 105
+  },
+  {
+    "title": "Financial Inclusion Policy",
+    "content": "Pradhan Mantri Jan Dhan Yojana is a national mission on financial inclusion. It ensures access to financial services like savings accounts, credit, insurance, and pensions in an affordable manner for the common people.",
+    "language": "english",
+    "difficulty": "intermediate",
+    "examType": "General",
+    "category": "economy",
+    "avgWPMRequired": 85
+  },
+  {
+    "title": "Artificial Intelligence Ethics",
+    "content": "As machine learning algorithms become more integrated into daily life, the ethical implications of data privacy and algorithmic bias must be addressed. Transparent automation remains a critical challenge for developers.",
+    "language": "english",
+    "difficulty": "advanced",
+    "examType": "General",
+    "category": "technology",
+    "avgWPMRequired": 115
+  },
+  {
+    "title": "Judicial Independence",
+    "content": "Independence of the judiciary is a cornerstone of the Indian Constitution. It ensures that judges can make impartial decisions based solely on law, free from any executive or legislative influence or interference.",
+    "language": "english",
+    "difficulty": "advanced",
+    "examType": "Court",
+    "category": "legal",
+    "avgWPMRequired": 125
+  },
+  {
+    "title": "Sustainable Agriculture",
+    "content": "Organic farming practices are gaining popularity as consumers seek healthier alternatives. Crop rotation and natural pest control reduce the dependency on synthetic fertilizers, preserving the biodiversity of our soil.",
+    "language": "english",
+    "difficulty": "intermediate",
+    "examType": "General",
+    "category": "environment",
+    "avgWPMRequired": 85
   }
 ]
